@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*Desktop: Общие стили*/
+
+body {
+    font-family: arial;
+    line-height: 23px;
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Desktop: header с логотипом, поиском, корзной*/
+
+.header_container {
+    width: 100%;
+    height: 75px;
+    background: #222222;
+}
+
+.header {
+    width: 1200px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header_block_left {
+    width: 111px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_block_left_logo {
+    width: 44px;
+    margin-right: 41px;
+    margin-top: 3px;
+}
+
+.header_block_left_logo img {
+    width: 44px;
+}
+
+.header_block_left_search {
+    width: 26px;
+    margin-top: 13px;
+}
+
+.header_block_left_search img {
+    width: 26px;
+}
+
+.header_block_right {
+    width: 168px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_block_right_menu {
+    width: 32px;
+    margin-top: 5px;
+}
+
+.header_block_right_menu img {
+    width: 32px;
+}
+
+.header_block_right_account {
+    width: 29px;
+    margin: 5px 33px 0 33px;
+}
+
+.header_block_right_account img {
+    width: 29px;
+}
+
+.header_block_right_cart {
+    width: 32px;
+    margin-top: 5px;
+}
+
+.header_block_right_cart img {
+    width: 32px;
+}
+
+
+/*Desktop: Конец header с логотипом, поиском, корзной*/
+
+
+/*Desktop: header с картинкой*/
+
+.big_header_container {
+    width: 100%;
+    Height: 574px;
+    background: #F1E4E6;
+}
+
+.big_header {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.big_header_left {
+    width: 600px;
+    Height: 574px;
+    background-image: url(images/man.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: flex-start;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.big_header_right {
+    width: 600px;
+}
+
+.big_header_right_inside {
+    margin-top: 190px;
+    border-left: solid 12px #F16D7F;
+}
+
+.big_header_right_inside h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57.6px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.big_header_right_inside_p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+
+/*Desktop: Конец header с картинкой*/
+
+
+/*Desktop: категории*/
+
+.category_container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 55px auto 25px;
+}
+
+.category_container h3 {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: -15px;
+}
+
+.caregory_p {
+    font-size: 24px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.category1 {
+    width: 385px;
+    height: 260px;
+    background-image: url(images/cat1.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.category2 {
+    width: 385px;
+    height: 260px;
+    background-image: url(images/cat2.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.category3 {
+    width: 385px;
+    height: 260px;
+    background-image: url(images/cat3.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.category_container_category4 {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto 30px;
+}
+
+.category_container_category4 h3 {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: -15px;
+}
+
+.category4 {
+    width: 1200px;
+    height: 180px;
+    background-image: url(images/cat4.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+
+/*Desktop: конец категории*/
