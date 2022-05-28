@@ -3,7 +3,7 @@
 /*Desktop: Общие стили*/
 
 body {
-    font-family: arial;
+    font-family: Lato;
     line-height: 23px;
     font-size: 16px;
     color: #2d2d2d;
@@ -19,10 +19,11 @@ body {
     width: 100%;
     height: 75px;
     background: #222222;
+    position: relative;
 }
 
 .header {
-    width: 1200px;
+    width: 1140px;
     height: 75px;
     display: flex;
     justify-content: space-between;
@@ -65,8 +66,8 @@ body {
 .header_block_right_menu {
     width: 32px;
     margin-top: 5px;
+    padding: 20px 0 20px 0;
 }
-
 
 .header_block_right_menu img {
     width: 32px;
@@ -94,6 +95,57 @@ body {
 /*Desktop: Конец header с логотипом, поиском, корзной*/
 
 
+/*Desktop: выпадающее меню*/
+
+.header_block_right_menu:hover .megabox_container {
+    display: block;
+}
+
+.megabox_container {
+    width: 33%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    display: none;
+}
+
+.megabox {
+    width: 232px;
+    background: #fff;
+    padding-left: 33px;
+    float: right;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.megabox h2 {
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.megabox h3 {
+    color: #F16D7F;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menulink {
+    display: block;
+    margin-left: 20px;
+    line-height: 33px;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+.menulink:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+
+/*Desktop: Конец выпадающего меню*/
+
+
 /*Desktop: header с картинкой*/
 
 .big_header_container {
@@ -103,7 +155,7 @@ body {
 }
 
 .big_header {
-    width: 1200px;
+    width: 1140px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -153,7 +205,7 @@ body {
 /*Desktop: категории*/
 
 .category_container {
-    width: 1200px;
+    width: 1140px;
     display: flex;
     justify-content: space-between;
     margin: 55px auto 25px;
@@ -173,7 +225,7 @@ body {
 }
 
 .category1 {
-    width: 385px;
+    width: 360px;
     height: 260px;
     background-image: url(images/cat1.jpg);
     background-position: left bottom;
@@ -184,7 +236,7 @@ body {
 }
 
 .category2 {
-    width: 385px;
+    width: 360px;
     height: 260px;
     background-image: url(images/cat2.jpg);
     background-position: left bottom;
@@ -195,7 +247,7 @@ body {
 }
 
 .category3 {
-    width: 385px;
+    width: 360px;
     height: 260px;
     background-image: url(images/cat3.jpg);
     background-position: left bottom;
@@ -206,9 +258,9 @@ body {
 }
 
 .category_container_category4 {
-    width: 1200px;
+    width: 1140px;
     height: 180px;
-    margin: 0 auto 30px;
+    margin: 0 auto 90px;
 }
 
 .category_container_category4 h3 {
@@ -219,7 +271,7 @@ body {
 }
 
 .category4 {
-    width: 1200px;
+    width: 1140px;
     height: 180px;
     background-image: url(images/cat4.jpg);
     background-position: left bottom;
@@ -231,3 +283,195 @@ body {
 
 
 /*Desktop: конец категории*/
+
+
+/*Desctop: Товары */
+
+.product_header {
+    margin-bottom: 45px;
+    line-height: 20px;
+    color: #9F9F9F;
+}
+
+.product_header h2 {
+    margin-bottom: -5px;
+    color: #222222;
+}
+
+.product_container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 33px;
+}
+
+.product {
+    width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.h3_prod {
+    font-size: 13px;
+}
+
+.product-desc_containet {
+    padding: 0 17px 0 17px;
+}
+
+.desc_prod {
+    font-size: 14px;
+    color: #5D5D5D;
+}
+
+.prod_price {
+    color: #F16D7F;
+}
+
+.button_prod {
+    width: 211px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #FF6A6A;
+    margin: 0 auto 109px;
+}
+
+.button_prod {
+    width: 211px;
+    line-height: 47px;
+    background: #fff;
+    border: 1px solid #FF6A6A;
+    margin: 0 auto 109px;
+    color: #FF6A6A;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button_prod:hover {
+    background: #FF6A6A;
+    border: 1px solid #FF6A6A;
+    margin: 0 auto 109px;
+    color: #fff;
+    transition: 1s;
+}
+
+
+/*Desktop: закрываем стили товаров*/
+
+
+/*Desktop: преимущества*/
+
+.benefits_big_container {
+    width: 100%;
+    background: #222224;
+    padding: 100px 0 70px 0;
+}
+
+.benefits_container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.benefits {
+    width: 360px;
+    color: #FBFBFB;
+    font-size: 17px;
+}
+
+benefits h2 {
+    color: #FBFBFB;
+    font-size: 20px;
+}
+
+.benefits-img {
+    margin: 0 auto;
+    width: 45px;
+    height: 32px;
+}
+
+
+/*Desktop: закрываем преимущества*/
+
+
+/*Desktop: subscribe*/
+
+.subscr_big_container {
+    width: 100%;
+    background-image: url(images/subscr.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscr_container {
+    width: 1140px;
+    height: 448px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.subscr {
+    width: 360px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subscr_form {
+    width: 560px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.subscr_form h3 {
+    font-size: 20px;
+}
+
+
+/*Desctop: закрываем subscribe*/
+
+
+/*Desktop: footer*/
+
+.footer_container {
+    width: 100%;
+    height: 79px;
+    background: #222222;
+}
+
+.footer {
+    width: 1140px;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer_copyright {
+    color: #FBFBFB;
+    font-size: 16px;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer_social_icon {
+    width: 15px;
+    height: 15px;
+    margin: 0 12px 0 12px;
+}
+
+
+/*Desktop: конец стилей footer*/
