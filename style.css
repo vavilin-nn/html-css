@@ -586,6 +586,13 @@ benefits h2 {
     color: #fff;
 }
 
+.button_sub:hover {
+ background: #fff;
+    border: 2px solid #F16D7F;
+    color: #F16D7F;
+    transition: 1s;
+
+
 
 /*Desctop: конец формы подписки*/
 
