@@ -172,11 +172,22 @@ body {
 
 .big_header_reg {
     width: 1140px;
+    display: flex;
     justify-content: space-between;
     margin: 0 auto;
     color: #F16D7F;
     font-size: 20px;
     font-weight: 100;
+    align-items: center;
+}
+
+.big_header_reg_bc {
+    color: #6F6E6E;
+    font-size: 14px;
+}
+
+.crump_active {
+    color: #F16D7F;
 }
 
 .big_header_left {
@@ -396,15 +407,7 @@ body {
 .img_cart {
     margin-right: 11px;
 }
-
-.button_prod {
-    width: 211px;
-    height: 47px;
-    background: #fff;
-    border: 1px solid #FF6A6A;
-    margin: 0 auto 109px;
-}
-
+ 
 .button_prod {
     width: 211px;
     line-height: 47px;
@@ -591,13 +594,13 @@ benefits h2 {
     border: 2px solid #F16D7F;
     color: #F16D7F;
     transition: 1s;
-
+}
 
 
 /*Desctop: конец формы подписки*/
 
 
-/*Desctop: регистрация*/
+/*Desktop: регистрация*/
 
 .account_container {
     width: 1140px;
