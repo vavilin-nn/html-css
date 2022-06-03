@@ -108,6 +108,7 @@ body {
     top: 75px;
     right: 0;
     display: none;
+    z-index: 2;
 }
 
 .megabox {
@@ -334,6 +335,7 @@ body {
     margin: 0 auto;
     flex-wrap: wrap;
     margin-bottom: 33px;
+    z-index: 1;
 }
 
 .product {
