@@ -9,7 +9,8 @@
     <meta name="description" content="Описание" />
     <title>Заголовок</title>
     <script src="https://kit.fontawesome.com/1a00f3b3c6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" type="text/css" /> </head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
 
 <body>
     <header>
@@ -17,42 +18,140 @@
             <div class="header">
                 <div class="header_block_left">
                     <div class="header_block_left_logo">
-                        <a href="file:///C:/Users/Анатолий/Desktop/html+css/index.html"><img src="images/logo.svg" alt="logo" title="logo" /></a>
+                        <a href="file:///C:/Users/Анатолий/Desktop/html+css/index.html"><img src="images/logo.svg"
+                                alt="logo" title="logo" /></a>
                     </div>
-                    <div class="header_block_left_search"><img src="images/search.svg" alt="search" title="search" /></div>
+                    <div class="header_block_left_search"><img src="images/search.svg" alt="search" title="search" />
+                    </div>
                 </div>
                 <nav class="header_block_right">
                     <div class="header_block_right_menu"><img src="images/icon_header_1.svg" alt="menu" title="menu" />
                         <div class="megabox_container">
                             <div class="megabox">
                                 <h2>Menu</h2>
-                                <h3>MAN</h3> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a>
-                                <h3>WOMAN</h3> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a>
-                                <h3>KIDS</h3> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a> </div>
+                                <h3>MAN</h3> <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a>
+                                <a class="menulink" href="#">Link</a> <a class="menulink" href="#">Link</a>
+                                <h3>WOMAN</h3> <a class="menulink" href="#">Link</a> <a class="menulink"
+                                    href="#">Link</a> <a class="menulink" href="#">Link</a> <a class="menulink"
+                                    href="#">Link</a>
+                                <h3>KIDS</h3> <a class="menulink" href="#">Link</a> <a class="menulink"
+                                    href="#">Link</a> <a class="menulink" href="#">Link</a>
+                            </div>
                         </div>
                     </div>
                     <div class="header_block_right_account">
-                        <a href="file:///C:/Users/Анатолий/Desktop/html+css/account.html"><img src="images/icon_header_2.svg" alt="account" title="account" /></a>
+                        <a href="file:///C:/Users/Анатолий/Desktop/html+css/account.html"><img
+                                src="images/icon_header_2.svg" alt="account" title="account" /></a>
                     </div>
-                    <div class="header_block_right_cart"><img src="images/icon_header_3.svg" alt="cart" title="cart" /></div>
+                    <div class="header_block_right_cart"><img src="images/icon_header_3.svg" alt="cart" title="cart" />
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <main class="big_header_container_reg">
         <div class="big_header_reg">
-        <h1>NEW ARRIVALS</h1>
-        <div class="big_header_reg_bc"><nav>HOME / MEN / <span class="crump_active">NEW ARRIVALS</span></nav></div>
+            <h1>NEW ARRIVALS</h1>
+            <div class="big_header_reg_bc">
+                <nav>HOME / MEN / <span class="crump_active">NEW ARRIVALS</span></nav>
+            </div>
         </div>
     </main>
-    <br>
+    <div class="container">
+        <div class="container_filter">
+            <div class="container_filter_left">
+                <details class="details">
+                    <summary class="summary_filter">Filter <i class="fa-solid fa-arrow-down-wide-short"></i></summary>
+                    <details class="details_blocks">
+                        <summary class="details_h3">Category</summary>
+                        <p class="details_links">Bags</p>
+                        <p class="details_links">Shoes</p>
+                        <p class="details_links">Polos</p>
+                        <p class="details_links">Tanks</p>
+                        <p class="details_links">Socks</p>
+                    </details>
+                    <details class="details_blocks">
+                        <summary class="details_h3">Brands</summary>
+                        <p class="details_links">Link 1</p>
+                        <p class="details_links">Link 2</p>
+                        <p class="details_links">Link 3</p>
+                        <p class="details_links">Link 4</p>
+                        <p class="details_links">Link 5</p>
+                    </details>
+                    <details class="details_blocks">
+                        <summary class="details_h3">Designer</summary>
+                        <p class="details_links">Link 1</p>
+                        <p class="details_links">Link 2</p>
+                        <p class="details_links">Link 3</p>
+                        <p class="details_links">Link 4</p>
+                        <p class="details_links">Link 5</p>
+                    </details>
+                </details>
+            </div>
+            <div class="container_filter_right">
+                <div class="container_filter_right_inside">
+                    <details class="details_right">
+                        <summary class="details_right_summary">Trending now</summary>
+                        <form class="form_filter" action="#">
+                            <div class="container_filter_right_checkbox">
+                                <label>
+                                    <input type="checkbox" name="param1" value="Param 1"> Param 1</label>
+                                <label>
+                                    <input type="checkbox" name="param2" value="Param 2"> Param 2</label>
+                                <label>
+                                    <input type="checkbox" name="param3" value="Param 3"> Param 3</label>
+                                <label>
+                                    <input type="checkbox" name="param4" value="Param 4"> Param 4</label>
+                            </div>
+                        </form>
+                    </details>
+                </div>
+                <div class="container_filter_right_inside">
+                    <details class="details_right">
+                        <summary class="details_right_summary">Size</summary>
+                        <form class="form_filter" action="#">
+                            <div class="container_filter_right_checkbox">
+                                <label>
+                                    <input type="checkbox" name="param1" value="xs"> XS</label>
+                                <label>
+                                    <input type="checkbox" name="param2" value="s"> S</label>
+                                <label>
+                                    <input type="checkbox" name="param3" value="m"> M</label>
+                                <label>
+                                    <input type="checkbox" name="param4" value="l"> L</label>
+                            </div>
+                        </form>
+                    </details>
+                </div>
+                <div class="container_filter_right_inside">
+                    <details class="details_right">
+                        <summary class="details_right_summary">Prise</summary>
+                        <form class="form_filter" action="#">
+                            <div class="container_filter_right_checkbox">
+                                <label>
+                                    <input type="checkbox" name="param1" value="Param_p 1"> 10$</label>
+                                <label>
+                                    <input type="checkbox" name="param2" value="Param_p 2"> 50$</label>
+                                <label>
+                                    <input type="checkbox" name="param3" value="Param_p 3"> 80$</label>
+                                <label>
+                                    <input type="checkbox" name="param4" value="Param_p 4"> 90$</label>
+                            </div>
+                        </form>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="product_container">
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/11.jpg" alt="Товар 1" title="Товар 1" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/11.jpg"
+                        alt="Товар 1" title="Товар 1" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -63,10 +162,12 @@
                 </div>
             </div>
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/12.jpg" alt="Товар 2" title="Товар 2" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/12.jpg"
+                        alt="Товар 2" title="Товар 2" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -77,10 +178,12 @@
                 </div>
             </div>
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/13.jpg" alt="Товар 3" title="Товар 3" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/13.jpg"
+                        alt="Товар 3" title="Товар 3" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -91,10 +194,12 @@
                 </div>
             </div>
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/14.jpg" alt="Товар 4" title="Товар 4" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/14.jpg"
+                        alt="Товар 4" title="Товар 4" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -105,10 +210,12 @@
                 </div>
             </div>
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/15.jpg" alt="Товар 5" title="Товар 5" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/15.jpg"
+                        alt="Товар 5" title="Товар 5" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -119,10 +226,12 @@
                 </div>
             </div>
             <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/16.jpg" alt="Товар 6" title="Товар 6" />
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/16.jpg"
+                        alt="Товар 6" title="Товар 6" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -132,11 +241,13 @@
                     </a>
                 </div>
             </div>
-              <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/17.jpg" alt="Товар 7" title="Товар 7" />
+            <div class="product">
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/17.jpg"
+                        alt="Товар 7" title="Товар 7" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -146,11 +257,13 @@
                     </a>
                 </div>
             </div>
-              <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/18.jpg" alt="Товар 8" title="Товар 8" />
+            <div class="product">
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/18.jpg"
+                        alt="Товар 8" title="Товар 8" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -160,11 +273,13 @@
                     </a>
                 </div>
             </div>
-              <div class="product">
-                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/19.jpg" alt="Товар 9" title="Товар 9" />
+            <div class="product">
+                <a class="product_href" href="#desc"> <img class="product_photo" src="images/product/19.jpg"
+                        alt="Товар 9" title="Товар 9" />
                     <div class="product-desc_containet">
                         <h3 class="h3_prod">ELLERY X M'O CAPSULE</h3>
-                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
+                        <p class="desc_prod">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up quos nulla fugit repudiandae.</p>
                         <p class="prod_price">$52.00</p>
                     </div>
                 </a>
@@ -175,24 +290,34 @@
                 </div>
             </div>
         </div>
-    </section> 
-    
+    </section>
+    <nav class="pagination"> <a href="#" class="pagination_item pag_nav">&#10094;</a> <a href="#"
+            class="pagination_item">1</a> <a href="#" class="pagination_item">2</a> <a href="#"
+            class="pagination_item">3</a> <a href="#" class="pagination_item">4</a> <a href="#"
+            class="pagination_item">5</a> <a href="#" class="pagination_item">6</a>
+        <div class="pagination_inside"> <a href="#" class="pagination_item">7</a> <span class="sep">...</span> <a
+                href="#" class="pagination_item">20</a> </div> <a href="#" class="pagination_item pag_nav">&#10095;</a>
+    </nav>
+
     <section class="benefits_big_container">
         <div class="benefits_container">
             <div class="benefits">
                 <div class="benefits-img"><img src="images/benef1.svg" alt="benef1" title="benef1" /></div>
                 <h3>Free Delivery</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </p>
             </div>
             <div class="benefits">
                 <div class="benefits-img"><img src="images/benef2.svg" alt="benef2" title="benef2" /></div>
                 <h3>Sales & discounts</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </p>
             </div>
             <div class="benefits">
                 <div class="benefits-img"><img src="images/benef3.svg" alt="benef3" title="benef3" /></div>
                 <h3>Quality assurance</h3>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </p>
             </div>
         </div>
     </section>
