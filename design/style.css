@@ -1,25 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-.flypage_header {
-  width: 100%;
-  background: #F7F7F7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /*Desktop: Общие стили*/
 body {
   font-family: 'Lato', sans-serif;
   line-height: 23px;
   font-size: 16px;
-  color: #2d2d2d;
+  color: #5E5E5E;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -876,6 +862,11 @@ button {
           box-sizing: border-box;
 }
 
+.container_filter_right__marginmod {
+  margin: 0 auto 50px;
+  position: relative;
+}
+
 .container_filter_right_inside {
   text-align: center;
   min-width: 80px;
@@ -898,6 +889,7 @@ button {
 .details_right_summary {
   list-style-type: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .details_right_summary:after {
@@ -964,4 +956,153 @@ button {
 }
 
 /*конец пагинации*/
+.extend_h2, .flypage_h2 {
+  color: #F16D7F;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.flypage_h3 {
+  color: #5E5E5E;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 60x;
+  font-weight: 400;
+}
+
+.flypage_header {
+  width: 100%;
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -50px;
+}
+
+.flypage_header_photo {
+  width: 400px;
+}
+
+.flypage_header_nav {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flypage_header_nav:hover {
+  color: #F16D7F;
+  cursor: pointer;
+}
+
+.flypage_header_nav_left {
+  width: 13px;
+  margin-right: 5px;
+}
+
+.flypage_header_nav_right {
+  width: 13px;
+  margin-left: 5px;
+}
+
+.flypage_desc {
+  width: 1140px;
+  -webkit-box-shadow: 0 0 1px #ccc;
+          box-shadow: 0 0 1px #ccc;
+  background: #fff;
+  margin: 0 auto 120px;
+  position: relative;
+  z-index: 2;
+  padding: 50px 10px 50px 10px;
+}
+
+.add_to_cart_box_fp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add_to_cart_fp:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+  background: #F16D7F;
+  color: #fff;
+}
+
+.add_to_cart_fp {
+  border: 2px solid #F16D7F;
+  padding: 1px 50px 1px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #F16D7F;
+  font-size: 18px;
+}
+
+.cart_fp {
+  margin-right: 15px;
+}
+
+.flypage_pinkhr {
+  background: #F16D7F;
+  width: 63px;
+  height: 4px;
+  margin: 0 auto 0;
+}
+
+.flypage_text {
+  text-align: center;
+  width: 555px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.flypage_prise {
+  font-size: 25px;
+  text-align: center;
+  color: #F16D7F;
+  margin-bottom: 60px;
+}
+
+.flypage_hrgray {
+  margin-bottom: 70px;
+  width: 655px;
+}
+
+.container_size_flypage {
+  height: 100px;
+}
 /*# sourceMappingURL=style.css.map */

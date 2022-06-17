@@ -1,14 +1,138 @@
+.extend_h2 {
+    color: $pinkcolor;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.flypage_h2 {
+    @extend .extend_h2
+}
+
+@mixin flypage_h3($val1, $val2, $val3, $val4) {
+    color: $graycolor;
+    font-size: $val1;
+    text-align: $val2;
+    margin-bottom: $val3;
+    font-weight: $val4;
+}
+
+.flypage_h3 {
+    @include flypage_h3 (22px, center, 60x, 400);
+}
+
 .flypage_header {
     width: 100%;
     background: #F7F7F7;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -50px;
+}
+
+.flypage_header_photo {
+    width: 400px;
 }
 
 .flypage_header_nav {
-    width: 50px;
-    height: 50px;
-    background: #2A2A2A;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.flypage_header_nav:hover {
+    color: $pinkcolor;
+    cursor: pointer;
+}
+
+.flypage_header_nav_left {
+    width: 13px;
+    margin-right: 5px;
+}
+
+.flypage_header_nav_right {
+    width: 13px;
+    margin-left: 5px;
+}
+
+.flypage_desc {
+    width: $container_main;
+    box-shadow: 0 0 1px #ccc;
+    background: #fff;
+    margin: 0 auto 120px;
+    position: relative;
+    z-index: 2;
+    padding: 50px 10px 50px 10px;
+}
+
+
+.add_to_cart_box_fp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_to_cart_fp:hover {
+    transition: 0.5s;
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    background: $pinkcolor;
+    color: #fff;
+}
+
+.add_to_cart_fp {
+    border: 2px solid $pinkcolor;
+    padding: 1px 50px 1px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $pinkcolor;
+    font-size: 18px;
+
+}
+
+.cart_fp {
+    margin-right: 15px;
+}
+
+
+
+.flypage_pinkhr {
+    background: $pinkcolor;
+    width: 63px;
+    height: 4px;
+    margin: 0 auto 0;
+}
+
+
+
+.flypage_text {
+    text-align: center;
+    width: 555px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.flypage_prise {
+    font-size: 25px;
+    text-align: center;
+    color: $pinkcolor;
+    margin-bottom: 60px;
+}
+
+.flypage_hrgray {
+    margin-bottom: 70px;
+    width: 655px;
+}
+
+.container_size_flypage {
+    height: 100px;
 }
