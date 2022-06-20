@@ -79,7 +79,6 @@
 }
 
 .add_to_cart_fp:hover {
-    transition: 0.5s;
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
@@ -96,7 +95,7 @@
     text-decoration: none;
     color: $pinkcolor;
     font-size: 18px;
-
+    transition: all 1s;
 }
 
 .cart_fp {

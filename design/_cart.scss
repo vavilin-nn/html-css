@@ -1,0 +1,125 @@
+.cart_container {
+
+    width: $container_main;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 100px;
+}
+
+.cart_prod {
+    width: 60%;
+
+}
+
+.cart_info {
+    width: 100%;
+}
+
+.cart_tov {
+    width: 100%;
+    box-shadow: 5px 5px 20px #ccc;
+    display: flex;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 40px;
+}
+
+.cart_tov_close {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    z-index: 2;
+    font-size: 30px;
+}
+
+.cart_tov_close a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart_tov_photo {
+    height: 300px;
+}
+
+
+.cart_tov_desc {
+    padding: 10px 20px 20px 30px;
+    box-sizing: border-box;
+}
+
+.cart_tov_desc_h2 {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.quan {
+    display: flex;
+}
+
+.cart_quan {
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    display: block;
+    padding: 0 15px 0 15px;
+}
+
+.cart_but {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_buttons {
+    width: 211px;
+    line-height: 47px;
+    background-color: #fff;
+    border: 1px solid $graycolor;
+    color: $graycolor;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.cart_buttons:hover {
+    background-color: $pinkcolor;
+    border: 1px solid $pinkcolor;
+    color: #fff;
+}
+
+.cart_buttons_a {
+    color: $graycolor;
+    text-decoration: none;
+}
+
+.cart_form {
+    width: 30%;
+}
+
+.cart_fields {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cart_total {
+    width: 100%;
+    background: #F5F3F3;
+    padding: 30px 30px 50px 30px;
+    box-sizing: border-box;
+}
+
+.total_span {
+    margin-left: 15px;
+}
+
+
+.total {
+    font-size: 1.3em;
+}
+
+.cart_hr {
+    margin-bottom: 20px;
+}

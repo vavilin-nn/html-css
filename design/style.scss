@@ -52,6 +52,7 @@ a {
     padding-left: 33px;
     float: right;
     box-shadow: 0 0 10px #ccc;
+
 }
 
 .megabox h2 {
@@ -287,7 +288,7 @@ a {
 
 .product:hover .product_photo {
     filter: brightness(50%);
-    transition: 1s;
+
 }
 
 .product:hover .add_to_cart_box {
@@ -296,6 +297,7 @@ a {
 
 .product_photo {
     display: block;
+    transition: all 1s;
 }
 
 .h3_prod {
@@ -323,7 +325,6 @@ a {
 
 .add_to_cart:hover {
     box-shadow: 0 0 6px #fff;
-    transition: 0.2s;
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
@@ -339,6 +340,7 @@ a {
     justify-content: center;
     text-decoration: none;
     color: #fff;
+    transition: all 0.2s;
 }
 
 .img_cart {
@@ -348,7 +350,7 @@ a {
 .button_prod {
     width: 211px;
     line-height: 47px;
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #FF6A6A;
     margin: 0 auto 109px;
     color: #FF6A6A;
@@ -356,16 +358,36 @@ a {
     text-decoration: none;
     text-align: center;
     font-size: 16px;
+    transition: all 1s;
 }
 
 .button_prod:hover {
-    background: #FF6A6A;
+    background-color: #FF6A6A;
     border: 1px solid #FF6A6A;
-    transition: 1s;
     margin: 0 auto 109px;
     color: #fff;
 }
 
+.button_prod_pink {
+    width: 250px;
+    line-height: 47px;
+    background-color: $pinkcolor;
+    border: 1px solid $pinkcolor;
+    margin: 0 auto 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.button_prod_pink:hover {
+    background-color: #fff;
+    border: 1px solid $pinkcolor;
+    margin: 0 auto 0;
+    color: $pinkcolor;
+}
 
 /*Desktop: закрываем стили товаров*/
 
@@ -484,11 +506,11 @@ benefits h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 }
 
 .footer_social_icon:hover {
     background: $pinkcolor;
-    transition: 1s;
     color: #fff;
 }
 
@@ -524,13 +546,13 @@ benefits h2 {
     border-radius: 0 360px 360px 0;
     border: none;
     color: #fff;
+    transition: all 1s;
 }
 
 .button_sub:hover {
     background: #fff;
     border: 2px solid $pinkcolor;
     color: $pinkcolor;
-    transition: 1s;
 }
 
 
@@ -562,6 +584,10 @@ benefits h2 {
     margin-bottom: 20px;
     padding: 0 20px 0 20px;
     box-sizing: border-box;
+
+    &_cart {
+        width: 100%;
+    }
 }
 
 .input_reg_last {
@@ -604,6 +630,7 @@ benefits h2 {
     border: none;
     color: #fff;
     font-size: 16px;
+    transition: all 1s;
 }
 
 .button_reg_a {
@@ -615,7 +642,6 @@ benefits h2 {
     background: #fff;
     border: 2px solid $pinkcolor;
     color: $pinkcolor;
-    transition: 1s;
 }
 
 button {
@@ -670,3 +696,4 @@ button {
 /*конец пагинации*/
 
 @import "product";
+@import "cart";
