@@ -9,6 +9,7 @@
     <meta name="description" content="Регистрация" />
     <title>Регистрация</title>
     <script src="https://kit.fontawesome.com/1a00f3b3c6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="design/style.css" type="text/css" />
 </head>
 
@@ -46,73 +47,84 @@
             </div>
         </div>
     </header>
-    <main class="big_header_container_reg">
-        <div class="big_header_reg">
-            <h1>REGISTRATION</h1>
-        </div>
-    </main>
-    <section class="account_container">
-        <div class="form_container">
-            <form class="form_reg" action="#">
-                <h3>Your Name</h3>
-                <input class="input_reg" type="text" placeholder="Имя">
-                <input class="input_reg" type="text" placeholder="Фамилия">
-                <div class="input_reg_radio">
-                    <label class="input_reg_radio_check">М
-                        <input type="radio" class="input_reg_radio_pol" name="pol" checked>
-                    </label>
-                    <label class="input_reg_radio_check">Ж
-                        <input type="radio" class="input_reg_radio_pol" name="pol">
-                    </label>
+    <div class="wrapper">
+        <div class="content">
+            <main class="big_header_container_reg">
+                <div class="big_header_reg">
+                    <h1>REGISTRATION</h1>
                 </div>
-                <h3>Login details</h3>
-                <input class="input_reg" type="email" placeholder="Ваш емаил">
-                <input class="input_reg_last" type="password" placeholder="Пароль">
-                <p class="form_last_text">Please use 8 or more characters, with at least 1 number and a mixture of
-                    uppercase and lowercase letters</p>
-                <a href="#" class="button_reg_a">
-                    <button class="button_reg" type="submit">JOIN NOW &#8594;</button>
-                </a>
-            </form>
+            </main>
+            <section class="account_container">
+                <div class="form_container">
+                    <form class="form_reg" action="#">
+                        <h3>Your Name</h3>
+                        <input class="input_reg" type="text" placeholder="Имя">
+                        <input class="input_reg" type="text" placeholder="Фамилия">
+                        <div class="input_reg_radio">
+                            <label class="input_reg_radio_check">М
+                                <input type="radio" class="input_reg_radio_pol" name="pol" checked>
+                            </label>
+                            <label class="input_reg_radio_check">Ж
+                                <input type="radio" class="input_reg_radio_pol" name="pol">
+                            </label>
+                        </div>
+                        <h3>Login details</h3>
+                        <input class="input_reg" type="email" placeholder="Ваш емаил">
+                        <input class="input_reg_last" type="password" placeholder="Пароль">
+                        <p class="form_last_text">Please use 8 or more characters, with at least 1 number and a mixture
+                            of
+                            uppercase and lowercase letters</p>
+                        <a href="#" class="button_reg_a">
+                            <button class="button_reg" type="submit">JOIN NOW &#8594;</button>
+                        </a>
+                    </form>
+                </div>
+                <article class="reg_desc">
+                    <h2>LOYALTY HAS ITS PERKS</h2>
+                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                        these as
+                        soon as you join:</p>
+                    <p>&#10003; 15% off welcome offer</p>
+                    <p>&#10003; Free shipping, returns and exchanges on all orders</p>
+                    <p>&#10003; $10 off a purchase on your birthday</p>
+                    <p>&#10003; Early access to products</p>
+                    <p>&#10003; Exclusive offers & rewards</p>
+                </article>
+            </section>
         </div>
-        <div class="reg_desc">
-            <h2>LOYALTY HAS ITS PERKS</h2>
-            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
-                soon as you join:</p>
-            <p>&#10003; 15% off welcome offer</p>
-            <p>&#10003; Free shipping, returns and exchanges on all orders</p>
-            <p>&#10003; $10 off a purchase on your birthday</p>
-            <p>&#10003; Early access to products</p>
-            <p>&#10003; Exclusive offers & rewards</p>
-        </div>
-    </section>
-    <section class="subscr_big_container">
-        <div class="subscr_container">
-            <div class="subscr">
-                <div class="subscr-img"><img src="images/woman.png" alt="woman" title="woman" /></div>
-                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum“</i></p>
-            </div>
-            <div class="subscr_form">
-                <h3>SUBSCRIBE</h3>
-                <p>FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="form_sub" action="#">
-                    <input class="input_sub" type="email" placeholder="Ваш емаил">
-                    <button class="button_sub" type="submit">Подписаться</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="footer_container">
-        <div class="footer">
-            <div class="footer_copyright">© 2021 Brand All Rights Reserved.</div>
-            <div class="footer_social">
-                <div class="footer_social_icon"><i class="fa-brands fa-vk"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-instagram"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-pinterest-p"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-twitter"></i></div>
-            </div>
-        </div>
-    </footer>
+        <footer>
+            <section class="subscr_big_container">
+                <div class="subscr_container">
+                    <figure class="subscr">
+                        <div class="subscr-img"><img src="images/woman.png" alt="woman" title="woman" /></div>
+                        <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                                condimentum“</i></figcaption>
+                    </figure>
+                    <div class="subscr_form">
+                        <h3>SUBSCRIBE</h3>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="form_sub" action="#">
+                            <input class="input_sub" type="email" placeholder="Ваш емаил">
+                            <button class="button_sub" type="submit">Подписаться</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+            <section class="footer_container">
+                <div class="footer">
+                    <div class="footer_copyright">© 2021 Brand All Rights Reserved.</div>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
 </body>
 
 </html>

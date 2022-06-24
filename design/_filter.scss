@@ -48,7 +48,7 @@
 
 .details_blocks[open] .details_h3 {
     color: #EF5B70;
-
+    margin-bottom: 10px;
 }
 
 
@@ -67,6 +67,12 @@
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
+    display: block;
+    line-height: 30px;
+}
+
+.details_links:hover {
+    color: $pinkcolor;
 }
 
 .fa-arrow-down-wide-short {

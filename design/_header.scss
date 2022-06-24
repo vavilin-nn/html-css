@@ -51,7 +51,8 @@
 .header_block_right_menu {
     width: 32px;
     margin-top: 5px;
-    padding: 20px 0 20px 0;
+    padding: 20px 16px 20px 16px;
+    cursor: pointer;
 }
 
 .header_block_right_menu img {
@@ -60,7 +61,8 @@
 
 .header_block_right_account {
     width: 29px;
-    margin: 5px 33px 0 33px;
+    margin: 5px 0px 0 0px;
+    padding: 0 16px 0 16px;
 }
 
 .header_block_right_account img {
@@ -70,6 +72,7 @@
 .header_block_right_cart {
     width: 32px;
     margin-top: 5px;
+    padding: 0 16px 0 16px;
 }
 
 .header_block_right_cart img {

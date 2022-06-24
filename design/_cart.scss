@@ -41,8 +41,17 @@
 
 .cart_tov_photo {
     height: 300px;
+    transition: all 1s;
 }
 
+.cart_tov_link {
+    display: block;
+    height: 300px;
+}
+
+.cart_tov_photo:hover {
+    filter: brightness(50%);
+}
 
 .cart_tov_desc {
     padding: 10px 20px 20px 30px;
@@ -57,6 +66,12 @@
 .quan {
     display: flex;
 }
+
+.quan_number {
+    margin-left: 15px;
+    padding: 0 5px 0 5px;
+}
+
 
 .cart_quan {
     border: 1px solid #ccc;

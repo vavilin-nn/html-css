@@ -28,9 +28,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 60px;
-    position: relative;
     z-index: 1;
-    margin-bottom: -50px;
 }
 
 .flypage_header_photo {
@@ -66,9 +64,9 @@
     box-shadow: 0 0 1px #ccc;
     background: #fff;
     margin: 0 auto 120px;
-    position: relative;
     z-index: 2;
     padding: 50px 10px 50px 10px;
+    transform: translateY(-50px);
 }
 
 
@@ -96,6 +94,7 @@
     color: $pinkcolor;
     font-size: 18px;
     transition: all 1s;
+    background-color: #fff;
 }
 
 .cart_fp {

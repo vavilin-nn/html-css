@@ -9,6 +9,7 @@
     <meta name="description" content="Корзина" />
     <title>Корзина</title>
     <script src="https://kit.fontawesome.com/1a00f3b3c6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="design/style.css" type="text/css" />
 </head>
 
@@ -46,126 +47,128 @@
             </div>
         </div>
     </header>
-    <main class="big_header_container_reg">
-        <div class="big_header_reg">
-            <h1>SHOPPING CART</h1>
-        </div>
-    </main>
+    <div class="wrapper">
+        <div class="content">
+            <main class="big_header_container_reg">
+                <div class="big_header_reg">
+                    <h1>SHOPPING CART</h1>
+                </div>
+            </main>
 
 
 
 
-    <section class="cart_container">
-        <div class="cart_prod">
+            <section class="cart_container">
+                <div class="cart_prod">
 
-            <div class="cart_info">
-                <div class="cart_tov">
-                    <img class="cart_tov_photo" src="images/product/13.jpg" alt="Товар 3" title="Товар 3" />
-                    <div class="cart_tov_desc">
-                        <h2 class="cart_tov_desc_h2">MANGO PEOPLE <br>T&#8209;SHIRT</h2>
-                        <p>Price: <span class="prod_price">$300</span></p>
-                        <p></p>Color: Red</p>
-                        <p> Size: Xl</p>
-                        <p class="quan"> Quantity: <span class="cart_quan">2</span></p>
+                    <div class="cart_info">
+                        <div class="cart_tov">
+                            <a class="cart_tov_link" href="product.html"><img class="cart_tov_photo"
+                                    src="images/product/13.jpg" alt="Товар 3" title="Товар 3" /></a>
+                            <div class="cart_tov_desc">
+                                <h2 class="cart_tov_desc_h2">MANGO PEOPLE <br>T&#8209;SHIRT</h2>
+                                <p>Price: <span class="prod_price">$300</span></p>
+                                <p></p>Color: Red</p>
+                                <p> Size: Xl</p>
+                                <p class="quan"> Quantity: <input class="quan_number" type="number" id="tentacles"
+                                        name="howmany" min="1" max="10000" value="1"></p>
+                            </div>
+                            <div class="cart_tov_close"><a href="#">&#215;</a></div>
+                        </div>
+
+                        <div class="cart_tov">
+                            <a class="cart_tov_link" href="product.html"><img class="cart_tov_photo"
+                                    src="images/product/14.jpg" alt="Товар 4" title="Товар 4" /></a>
+                            <div class="cart_tov_desc">
+                                <h2 class="cart_tov_desc_h2">MANGO PEOPLE <br>T&#8209;SHIRT</h2>
+                                <p>Price: <span class="prod_price">$400</span></p>
+                                <p></p>Color: Black</p>
+                                <p> Size: Xl</p>
+                                <p class="quan"> Quantity: <input class="quan_number" type="number" id="tentacles"
+                                        name="howmany" min="1" max="10000" value="1"></p>
+                            </div>
+                            <div class="cart_tov_close"><a href="#">&#215;</a></div>
+                        </div>
+
+
                     </div>
-                    <div class="cart_tov_close"><a href="#">&#215;</a></div>
+
+
+                    <div class="cart_but">
+                        <a class="cart_buttons" href="#">CLEAR SHOPPING CART</a>
+                        <a class="cart_buttons" href="catalog.html">CONTINUE SHOPPING</a>
+                    </div>
+
                 </div>
 
-                <div class="cart_tov">
-                    <img class="cart_tov_photo" src="images/product/14.jpg" alt="Товар 4" title="Товар 4" />
-                    <div class="cart_tov_desc">
-                        <h2 class="cart_tov_desc_h2">MANGO PEOPLE <br>T&#8209;SHIRT</h2>
-                        <p>Price: <span class="prod_price">$400</span></p>
-                        <p></p>Color: Black</p>
-                        <p> Size: Xl</p>
-                        <p class="quan"> Quantity: <span class="cart_quan">3</span></p>
+
+
+
+                <div class="cart_form">
+
+                    <div class="cart_fields">
+
+                        <form class="form_reg" action="#">
+                            <h3>SHIPPING ADRESS</h3>
+                            <input class="input_reg input_reg_cart" type="text" placeholder="Bangladesh">
+                            <input class="input_reg input_reg_cart" type="text" placeholder="State">
+                            <input class="input_reg input_reg_cart" type="text" placeholder="Postcode / Zip">
+
+                            <a href="#" class="cart_buttons_a">
+                                <button class="cart_buttons" type="submit">GET A QUOTE</button>
+                            </a>
+                        </form>
                     </div>
-                    <div class="cart_tov_close"><a href="#">&#215;</a></div>
+
+
+                    <div class="cart_total">
+                        <p style="text-align: right">SUB TOTAL <span class="total_span">$900</span></p>
+                        <p style="text-align: right" class="total">GRAND TOTAL <span
+                                class="prod_price total_span">$900</span>
+                        </p>
+                        <hr class="cart_hr">
+                        <a class="button_prod_pink">PROCEED TO CHECKOUT</a>
+                    </div>
+
+
                 </div>
 
-
-            </div>
-
-
-            <div class="cart_but">
-                <a class="cart_buttons" href="#">CLEAR SHOPPING CART</a>
-                <a class="cart_buttons" href="catalog.html">CONTINUE SHOPPING</a>
-            </div>
+            </section>
 
         </div>
+        <footer>
+            <section class="subscr_big_container">
+                <div class="subscr_container">
+                    <figure class="subscr">
+                        <div class="subscr-img"><img src="images/woman.png" alt="woman" title="woman" /></div>
+                        <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                                condimentum“</i></figcaption>
+                    </figure>
+                    <div class="subscr_form">
+                        <h3>SUBSCRIBE</h3>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="form_sub" action="#">
+                            <input class="input_sub" type="email" placeholder="Ваш емаил">
+                            <button class="button_sub" type="submit">Подписаться</button>
 
+                        </form>
 
-
-
-        <div class="cart_form">
-
-            <div class="cart_fields">
-
-                <form class="form_reg" action="#">
-                    <h3>SHIPPING ADRESS</h3>
-                    <input class="input_reg input_reg_cart" type="text" placeholder="Bangladesh">
-                    <input class="input_reg input_reg_cart" type="text" placeholder="State">
-                    <input class="input_reg input_reg_cart" type="text" placeholder="Postcode / Zip">
-
-                    <a href="#" class="cart_buttons_a">
-                        <button class="cart_buttons" type="submit">GET A QUOTE</button>
-                    </a>
-                </form>
-            </div>
-
-
-            <div class="cart_total">
-                <p style="text-align: right">SUB TOTAL <span class="total_span">$900</span></p>
-                <p style="text-align: right" class="total">GRAND TOTAL <span class="prod_price total_span">$900</span>
-                </p>
-                <hr class="cart_hr">
-                <a class="button_prod_pink">PROCEED TO CHECKOUT</a>
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="subscr_big_container">
-        <div class="subscr_container">
-            <div class="subscr">
-                <div class="subscr-img"><img src="images/woman.png" alt="woman" title="woman" /></div>
-                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum“</i></p>
-            </div>
-            <div class="subscr_form">
-                <h3>SUBSCRIBE</h3>
-                <p>FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="form_sub" action="#">
-                    <input class="input_sub" type="email" placeholder="Ваш емаил">
-                    <button class="button_sub" type="submit">Подписаться</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="footer_container">
-        <div class="footer">
-            <div class="footer_copyright">© 2021 Brand All Rights Reserved.</div>
-            <div class="footer_social">
-                <div class="footer_social_icon"><i class="fa-brands fa-vk"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-instagram"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-pinterest-p"></i></div>
-                <div class="footer_social_icon"><i class="fa-brands fa-twitter"></i></div>
-            </div>
-        </div>
-    </footer>
+                    </div>
+                </div>
+            </section>
+            <section class="footer_container">
+                <div class="footer">
+                    <div class="footer_copyright">© 2021 Brand All Rights Reserved.</div>
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="footer_social_icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -20,6 +20,23 @@ a {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 /*Desktop: header с логотипом, поиском, корзной*/
 .header_container {
   width: 100%;
@@ -86,7 +103,8 @@ a {
 .header_block_right_menu {
   width: 32px;
   margin-top: 5px;
-  padding: 20px 0 20px 0;
+  padding: 20px 16px 20px 16px;
+  cursor: pointer;
 }
 
 .header_block_right_menu img {
@@ -95,7 +113,8 @@ a {
 
 .header_block_right_account {
   width: 29px;
-  margin: 5px 33px 0 33px;
+  margin: 5px 0px 0 0px;
+  padding: 0 16px 0 16px;
 }
 
 .header_block_right_account img {
@@ -105,6 +124,7 @@ a {
 .header_block_right_cart {
   width: 32px;
   margin-top: 5px;
+  padding: 0 16px 0 16px;
 }
 
 .header_block_right_cart img {
@@ -118,7 +138,7 @@ a {
 }
 
 .megabox_container {
-  width: 33%;
+  width: 320px;
   position: absolute;
   top: 75px;
   right: 0;
@@ -127,7 +147,7 @@ a {
 }
 
 .megabox {
-  width: 232px;
+  width: 100%;
   background: #fff;
   padding-left: 33px;
   float: right;
@@ -149,14 +169,14 @@ a {
 
 .menulink {
   display: block;
-  margin-left: 20px;
+  padding-left: 20px;
   line-height: 33px;
   color: #6F6E6E;
   text-decoration: none;
 }
 
 .menulink:hover {
-  color: #0000ff;
+  color: #F16D7F;
   text-decoration: underline;
 }
 
@@ -211,6 +231,11 @@ a {
 .big_header_reg_bc {
   color: #6F6E6E;
   font-size: 14px;
+}
+
+.big_header_reg_bc a {
+  color: #6F6E6E;
+  text-decoration: none;
 }
 
 .crump_active {
@@ -292,6 +317,15 @@ a {
   padding-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+}
+
+.category_hover:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 .category2 {
@@ -304,6 +338,8 @@ a {
   padding-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: block;
+  text-decoration: none;
 }
 
 .category3 {
@@ -316,6 +352,8 @@ a {
   padding-top: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: block;
+  text-decoration: none;
 }
 
 .category_container_category4 {
@@ -341,6 +379,8 @@ a {
   padding-top: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: block;
+  text-decoration: none;
 }
 
 /*Desktop: конец категории*/
@@ -637,6 +677,8 @@ benefits h2 {
           align-items: center;
   -webkit-transition: all 1s;
   transition: all 1s;
+  text-decoration: none;
+  color: #000;
 }
 
 .footer_social_icon:hover {
@@ -662,11 +704,11 @@ benefits h2 {
 
 .input_sub {
   width: 222px;
-  height: 49px;
+  height: 51px;
   background: #E1E1E1;
   border-radius: 360px 0 0 360px;
   border: none;
-  padding-left: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .button_sub {
@@ -851,6 +893,7 @@ button {
 
 .details_blocks[open] .details_h3 {
   color: #EF5B70;
+  margin-bottom: 10px;
 }
 
 .details_h3 {
@@ -868,6 +911,12 @@ button {
   font-size: 14px;
   font-weight: 400;
   text-transform: none;
+  display: block;
+  line-height: 30px;
+}
+
+.details_links:hover {
+  color: #F16D7F;
 }
 
 .fa-arrow-down-wide-short {
@@ -968,6 +1017,10 @@ button {
   text-decoration: none;
 }
 
+.pagination_item_pink {
+  color: #F16D7F;
+}
+
 .sep {
   color: #EBEBEB;
 }
@@ -1010,9 +1063,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 60px;
-  position: relative;
   z-index: 1;
-  margin-bottom: -50px;
 }
 
 .flypage_header_photo {
@@ -1055,9 +1106,10 @@ button {
           box-shadow: 0 0 1px #ccc;
   background: #fff;
   margin: 0 auto 120px;
-  position: relative;
   z-index: 2;
   padding: 50px 10px 50px 10px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 .add_to_cart_box_fp {
@@ -1096,6 +1148,7 @@ button {
   font-size: 18px;
   -webkit-transition: all 1s;
   transition: all 1s;
+  background-color: #fff;
 }
 
 .cart_fp {
@@ -1181,6 +1234,18 @@ button {
 
 .cart_tov_photo {
   height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cart_tov_link {
+  display: block;
+  height: 300px;
+}
+
+.cart_tov_photo:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .cart_tov_desc {
@@ -1198,6 +1263,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.quan_number {
+  margin-left: 15px;
+  padding: 0 5px 0 5px;
 }
 
 .cart_quan {
