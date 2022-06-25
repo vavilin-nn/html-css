@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .header_container {
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .big_header_container {
+        height: 430px;
+    }
+
+    .big_header {
+        width: 100%;
+    }
+
+    .big_header_left {
+        width: 50%;
+        height: 430px;
+        background-image: url(images/man2.png);
+        background-size: cover;
+    }
+
+    .big_header_right {
+        width: 50%;
+    }
+
+    .big_header_right_inside {
+        margin-top: 160px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .big_header_right_inside_p {
+        font-size: 27px;
+    }
+
+    .category_container {
+        width: 100%;
+        margin: 25px auto 20px;
+    }
+
+    .category_container_category4 {
+        width: 100%;
+    }
+
+    .product_container {
+        width: 100%;
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .benefits_big_container {
+        padding: 60px 0 30px 0;
+    }
+
+    .benefits_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .benefits {
+        width: 50%;
+        margin: 0 auto 30px;
+    }
+
+    .subscr_container {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .subscr {
+        margin-top: 50px;
+        width: 50%;
+        margin-bottom: 60px;
+    }
+
+    .subscr_form {
+        width: 50%;
+        margin-bottom: 120px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+    }
+
+
+}

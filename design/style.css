@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-  width: 1140px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ a {
 }
 
 .header {
-  width: 1140px;
+  width: 80%;
   height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,12 +184,12 @@ a {
 /*Desktop: header с картинкой*/
 .big_header_container {
   width: 100%;
-  Height: 574px;
+  height: 574px;
   background: #F1E4E6;
 }
 
 .big_header {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +201,7 @@ a {
 
 .big_header_container_reg {
   width: 100%;
-  Height: 154px;
+  height: 154px;
   background: #F1E4E6;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -212,7 +212,7 @@ a {
 }
 
 .big_header_reg {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,9 +244,9 @@ a {
 
 .big_header_left {
   width: 600px;
-  Height: 574px;
+  height: 574px;
   background-image: url(images/man.png);
-  background-position: left bottom;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
   -ms-flex-item-align: start;
@@ -266,9 +266,10 @@ a {
 }
 
 .big_header_right_inside h1 {
+  padding-top: 6px;
   font-weight: 900;
   font-size: 48px;
-  line-height: 57.6px;
+  line-height: 37.6px;
   text-transform: uppercase;
   margin-left: 10px;
 }
@@ -284,7 +285,7 @@ a {
 /*Desktop: Конец header с картинкой*/
 /*Desktop: категории*/
 .category_container {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,6 +293,11 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 55px auto 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 3% 0 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .category_container h3 {
@@ -308,10 +314,10 @@ a {
 }
 
 .category1 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(images/cat1.jpg);
-  background-position: left bottom;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
@@ -329,10 +335,10 @@ a {
 }
 
 .category2 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(images/cat2.jpg);
-  background-position: left bottom;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
@@ -343,10 +349,10 @@ a {
 }
 
 .category3 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(images/cat3.jpg);
-  background-position: left bottom;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
@@ -357,9 +363,12 @@ a {
 }
 
 .category_container_category4 {
-  width: 1140px;
+  width: 80%;
   height: 180px;
   margin: 0 auto 90px;
+  padding: 0 3% 0 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .category_container_category4 h3 {
@@ -370,7 +379,7 @@ a {
 }
 
 .category4 {
-  width: 1140px;
+  width: 100%;
   height: 180px;
   background-image: url(images/cat4.jpg);
   background-position: left bottom;
@@ -397,7 +406,7 @@ a {
 }
 
 .product_container {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,10 +418,13 @@ a {
       flex-wrap: wrap;
   margin-bottom: 33px;
   z-index: 1;
+  padding: 0 3% 0 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .product {
-  width: 360px;
+  width: 32%;
   background: #F8F8F8;
   margin-bottom: 30px;
   position: relative;
@@ -438,6 +450,7 @@ a {
   display: block;
   -webkit-transition: all 1s;
   transition: all 1s;
+  width: 100%;
 }
 
 .h3_prod {
@@ -551,7 +564,7 @@ a {
 }
 
 .benefits_container {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,7 +578,7 @@ a {
 }
 
 .benefits {
-  width: 360px;
+  width: 32%;
   color: #FBFBFB;
   font-size: 17px;
 }
@@ -592,7 +605,7 @@ benefits h2 {
 }
 
 .subscr_container {
-  width: 1140px;
+  width: 80%;
   height: 448px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,7 +644,7 @@ benefits h2 {
 }
 
 .footer {
-  width: 1140px;
+  width: 80%;
   height: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,7 +744,7 @@ benefits h2 {
 /*Desctop: конец формы подписки*/
 /*Desktop: регистрация*/
 .account_container {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1101,7 +1114,7 @@ button {
 }
 
 .flypage_desc {
-  width: 1140px;
+  width: 80%;
   -webkit-box-shadow: 0 0 1px #ccc;
           box-shadow: 0 0 1px #ccc;
   background: #fff;
@@ -1186,7 +1199,7 @@ button {
 }
 
 .cart_container {
-  width: 1140px;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,5 +1352,169 @@ button {
 
 .cart_hr {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .header_container {
+    padding: 0 20px 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header {
+    width: 100%;
+  }
+  .big_header_container {
+    height: 430px;
+  }
+  .big_header {
+    width: 100%;
+  }
+  .big_header_left {
+    width: 50%;
+    height: 430px;
+    background-image: url(images/man2.png);
+    background-size: cover;
+  }
+  .big_header_right {
+    width: 50%;
+  }
+  .big_header_right_inside {
+    margin-top: 160px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .big_header_right_inside_p {
+    font-size: 27px;
+  }
+  .category_container {
+    width: 100%;
+    margin: 25px auto 20px;
+  }
+  .category_container_category4 {
+    width: 100%;
+  }
+  .product_container {
+    width: 100%;
+  }
+  .product {
+    width: 48%;
+  }
+  .benefits_big_container {
+    padding: 60px 0 30px 0;
+  }
+  .benefits_container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits {
+    width: 50%;
+    margin: 0 auto 30px;
+  }
+  .subscr_container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .subscr {
+    margin-top: 50px;
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .subscr_form {
+    width: 50%;
+    margin-bottom: 120px;
+  }
+  .footer {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767px) {
+  .big_header_left {
+    display: none;
+  }
+  .big_header_right {
+    width: 100%;
+  }
+  .header_block_right_account {
+    display: none;
+  }
+  .header_block_right_cart {
+    display: none;
+  }
+  .header_block_right_menu {
+    padding: 0;
+  }
+  .header_block_right {
+    width: auto;
+  }
+  .big_header_right_inside {
+    margin: 150px auto 0;
+    width: 310px;
+  }
+  .big_header_right_inside h1 {
+    font-size: 47px;
+  }
+  .big_header_right_inside_p {
+    font-size: 24px;
+  }
+  .category_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 25px auto 0px;
+  }
+  .category1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .category2 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .category3 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .category4 {
+    width: 100%;
+  }
+  .product_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product {
+    width: 100%;
+  }
+  .footer_container {
+    height: 150px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
