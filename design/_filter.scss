@@ -5,7 +5,7 @@
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin: 33px 0 48px 0;
+    margin: 33px 0 48px 30px;
     text-transform: uppercase;
     color: #6F6E6E;
     position: relative;
@@ -28,8 +28,11 @@
 .details[open] {
     background-color: #fff;
     box-shadow: 0px 0px 10px #ccc;
-
+    z-index: 10;
+    position: relative;
+    background-color: #fff;
 }
+
 
 .details[open] .summary_filter {
     color: #EF5B70;
@@ -81,12 +84,6 @@
 }
 
 
-
-
-
-
-
-
 .container_filter_right {
     display: flex;
     justify-content: space-between;
@@ -100,26 +97,34 @@
     }
 }
 
+.container_filter_right_fly {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0;
+    width: 420px;
+}
+
 
 
 
 .container_filter_right_inside {
     text-align: center;
-    min-width: 80px;
 }
 
 
-.details_right {
-    z-index: 10;
-}
+.details_right {}
+
+
 
 .details_right[open] .form_filter {
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #ccc;
+
     padding: 8px 15px 8px 8px;
     box-sizing: border-box;
     margin-top: 10px;
+    z-index: 100;
+    position: relative;
 }
+
 
 .details_right_summary {
     list-style-type: none;
@@ -146,6 +151,15 @@
     display: flex;
     flex-direction: column;
     text-transform: none;
+    z-index: 100;
+    position: relative;
+}
+
+.container_filter_right_checkbox:first-of-type {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 8px 15px 8px 8px;
+    box-sizing: border-box;
 }
 
 

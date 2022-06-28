@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
 
     .container {
@@ -10,12 +10,22 @@
         box-sizing: border-box;
     }
 
+    .header_block_right_menu:hover .megabox {
+        right: 0;
+    }
+
     .header {
         width: 100%;
     }
 
     .big_header_container {
         height: 430px;
+    }
+
+    .big_header_reg {
+        width: 100%;
+        padding: 0 3% 0 3%;
+        box-sizing: border-box;
     }
 
     .big_header {
@@ -97,5 +107,111 @@
         box-sizing: border-box;
     }
 
+
+    .account_container {
+        width: 100%;
+        padding: 0 3% 0 3%;
+        box-sizing: border-box;
+    }
+
+
+    .form_container {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .reg_desc {
+        width: 50%;
+    }
+
+    .cart_container {
+        width: 100%;
+        padding: 0 3% 0 3%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .cart_prod {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+    .cart_tov {
+        padding-right: 0;
+
+    }
+
+
+    .cart_tov_desc {
+        padding: 10px 20px 0 30px;
+        box-sizing: border-box;
+    }
+
+    .cart_but {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cart_tov_desc_h2 {
+        margin-bottom: 10px;
+    }
+
+    .cart_tov_desc {
+        line-height: 15px;
+    }
+
+    .cart_form {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cart_fields {
+        width: 48%;
+    }
+
+    .cart_total {
+        width: 48%;
+        margin-top: 57px;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .product_container {
+        width: 100%;
+        padding: 0 3% 0 3%;
+        box-sizing: border-box;
+    }
+
+    .container_filter {
+        width: 100%;
+        padding: 0 3% 0 3%;
+        box-sizing: border-box;
+        margin: 33px 0 48px 0px;
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .product:last-of-type {
+        display: none;
+    }
+
+    .flypage_desc {
+        width: 100%;
+        padding: 30px 3% 50px 3%;
+        box-sizing: border-box;
+    }
+
+    .flypage_hrgray {
+        margin-bottom: 70px;
+        width: 90%;
+    }
+
+    .flypage_text {
+        width: 80%;
+    }
 
 }

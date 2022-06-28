@@ -45,32 +45,133 @@ a {
     flex-grow: 1;
 }
 
-@import "header";
+/*Desktop: header с логотипом, поиском, корзной*/
+
+.header_container {
+    width: 100%;
+    height: 75px;
+    background: #222222;
+    position: relative;
+}
+
+.header {
+    width: $container_main;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header_block_left {
+    width: 111px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_block_left_logo {
+    width: 44px;
+    margin-right: 41px;
+    margin-top: 3px;
+}
+
+.header_block_left_logo img {
+    width: 44px;
+}
+
+.header_block_left_search {
+    width: 26px;
+    margin-top: 13px;
+}
+
+.header_block_left_search img {
+    width: 26px;
+}
+
+.header_block_right {
+    width: 168px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_block_right_menu {
+    width: 32px;
+    margin-top: 5px;
+    padding: 20px 16px 20px 16px;
+    cursor: pointer;
+
+}
+
+.header_block_right_menu img {
+    width: 32px;
+}
+
+.header_block_right_account {
+    width: 29px;
+    margin: 5px 0px 0 0px;
+    padding: 0 16px 0 16px;
+}
+
+.header_block_right_account img {
+    width: 29px;
+}
+
+.header_block_right_cart {
+    width: 32px;
+    margin-top: 5px;
+    padding: 0 16px 0 16px;
+    position: relative;
+}
+
+.header_block_right_cart_kolvo {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: $pinkcolor;
+    border-radius: 360px;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 3px;
+    line-height: 16px;
+}
+
+.header_block_right_cart img {
+    width: 32px;
+}
+
+
+/*Desktop: Конец header с логотипом, поиском, корзной*/
 
 
 /*Desktop: выпадающее меню*/
 
-.header_block_right_menu:hover .megabox_container {
-    display: block;
-}
 
-.megabox_container {
-    width: 320px;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    display: none;
-    z-index: 2;
-}
 
 .megabox {
-    width: 100%;
-    background: #fff;
-    padding-left: 33px;
-    float: right;
-    box-shadow: 0 0 10px #ccc;
-
+    display: none;
 }
+
+/*position: relative; стоит у header_container*/
+
+.header_block_right_menu:hover .megabox {
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+    top: 65px;
+    cursor: default;
+    z-index: 3;
+}
+
+
+
+.megabox_inside {
+    padding: 0 53px 30px 33px;
+}
+
 
 .megabox h2 {
     color: #000;
@@ -95,6 +196,14 @@ a {
 .menulink:hover {
     color: $pinkcolor;
     text-decoration: underline;
+}
+
+.menu_close {
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    margin-right: 7px;
 }
 
 
@@ -133,7 +242,10 @@ a {
     font-size: 20px;
     font-weight: 100;
     align-items: center;
+    line-height: 42px;
 }
+
+
 
 .big_header_reg_bc {
     color: #6F6E6E;
@@ -626,8 +738,12 @@ benefits h2 {
     box-sizing: border-box;
 }
 
+.form_reg_cart {
+    box-sizing: border-box;
+}
+
 .input_reg {
-    width: 360px;
+    width: 100%;
     height: 45px;
     border: 1px solid #A4A4A4;
     margin-bottom: 20px;
@@ -640,7 +756,7 @@ benefits h2 {
 }
 
 .input_reg_last {
-    width: 360px;
+    width: 100%;
     height: 45px;
     border: 1px solid #A4A4A4;
     margin-bottom: 0px;
@@ -653,7 +769,7 @@ benefits h2 {
 }
 
 .input_reg_radio {
-    width: 360px;
+    width: 100%;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -710,7 +826,7 @@ button {
 .pagination {
     display: flex;
     justify-content: space-between;
-    width: 284px;
+    width: 274px;
     border: 2px solid #EBEBEB;
     margin: 0 auto 70px;
     padding: 10px;
